@@ -7,6 +7,31 @@ sudo sh -c 'echo 0 > /proc/sys/net/ipv4/conf/eno1/send_redirects'
 sudo sh -c 'echo 0 > /proc/sys/net/ipv4/conf/wlp2s0/send_redirects'
 sudo iptables -P FORWARD ACCEPT
 sudo iptables -P INPUT ACCEPT
+
+//:///////::::::::::::------------------------------------------------------------:::::://////ossoys
+:::sdhhhhhhhhhyyyyyyyyyyyyyysssssoooo++++++//////////::::::/o/://::::://+////////+++++++++++++ssssoy
+:::ydddddhhhhhyyyhhhhhhhhhhhhhhhhyyyyyysssooooooo++++//////ossyhhhhyyhhhhhyyyyssyyyyyyyyyhyyhhhhs+o+
+:::shhhhyyyhdmmmmmdhysyyyyyyyyyyyyyyyyyyyyyyyyyyyyysshhhhhhhdhhyyyyyyyyyyhhyyyyyyyyyyyyyyyyyyyyys///
+:::yhhhyymNNNNNNNNNNNmhsyyyyyyyyyyyyyyyyyyyyyyyyyyyyymNNNNNNNNNNNdsyyyyyyyyyyyyyyyyyyyyyyyyyyyyyo//o
+:::yhhhsNNNNNNh+yNNNNNNyyyyyyhhhhhhyssyyyyysyysyyyyyhNNNNNmydmmNNNmohyyyhhhdhhhyyssyyyyyyoyhsyyyo//s
+:::yhhyhNNNNNNs:oNNNNNNdoydNNNNNNNNNmmNNNNNdsysNNNNNNNNNNNh-/mmNNNNoydmNNNNNNNNNmyhNNNNNdhNNysyyo:/+
+:::o+++hNNNNNNs:/yyyyyysoNNNNNmoyNNNNNNNNNNN+/sNNNNNmNNNNNd-/NNNNNNoNNNNNmosNNNNNNmNNNNNNNNNh////:::
+:::o+++hNNNNNNs:::::::::hNNNNNh:/NNNNNNNNNNNs/yNNNNNhNNNNNmydNNNmdysNNNNNd::NNNNh+++dNNNNNmmh:///::/
+:::o+++hNNNNNNsohhhhhhhhooooooo/sNNNNNNNNNNNd/dNNNNmsNNNNNNNNNNNdy/ohhhhhh+sNNNds+++sdNNNdo++////::/
+:::o+++hNNNNNNssNNNNNNNN+:/+shdmNNNNNNNdNNNNN/mNNNNhsNNNNNmoyNNNNNNo:/oydmNNNNN/::--:/mNNo++++++/:::
+::/yyyshNNNNNNs/oNNNNNNNshmNNNNdsNNNNNNoNNNNNsNNNNNyyNNNNNd-:NNNNNNmhmNNNNdomNN//:--/:NNNssssssss:::
+::/yyyshNNNNNNs::NNNNNNNmNNNNNm::NNNNNN+hNNNNmNNNNNosNNNNNd-:mNNNNNNNNNNNN/-dNNy+::::sNNNssyyyyys:::
+::/yyyyyNNNNNNs:/NNNNNNNNNNNNNd::NNNNNN++NNNNNNNNNNosNNNNNm/+NNNNNNNNNNNNN/-hNNNs/:/:NNNNssyyyyys:::
+::/yhyysmNNNNNmyhNNNNNNNmNNNNNNssNNNNNNo:dNNNNNNNNdssNNNNNNmNNNNNNNdNNNNNNdymNNNy::+:mNNNyyyyyyyy:::
+::/hdddhydNNNNNNNNdNNNNNymNNNNNNdmNNNNNo:yNNNNNNNNydsNNNNNNNNmmmmdhyydNNNNNdyNNNy:/+:mmmmyhdddddd/::
+::/hddddddhhdddddhhyhhhhyhhddddhyhhhhhydmmNNNNNNNdydyyyyyyyyyyyyyhhhhysyyyyhsyhyssssssyhysyhhhddd/::
+::/dddddddddddhyhhhhhhdhhhhhyyhhddddddyhddddddddhhdddososoyoosssoossoo+ysshyysyoyssysyohsssyohddd/::
+::/ddddddddddddhhdddddddddddddhdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd/:/
+::/dmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmNNNNNNNNNNNNNNNmmmmmmmmmmmmmm+::
+::/dmNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNmmNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNmmddh+:/
+::/ohdmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmdddddddddddddddddddhs/::::+
+:::+syyyyyyhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhdddddddddddddddddddddddddddddddddddddddddddddhyo/::///
+
 '''
 
 import sys
