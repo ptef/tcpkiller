@@ -30,8 +30,8 @@ def parse_packet(p):
   if p.haslayer(TCP) and p[TCP].flags in [ 2, 16, 24 ]: # S,A,PA
       ip.src=p[IP].dst
       ip.dst=SOURCE
-      tcp.sport=p[TCP].sport
-      tcp.dport=p[TCP].dport
+      tcp.sport=p[TCP].dport
+      tcp.dport=p[TCP].sport
       tcp.seq=0
       tcp.ack=p[TCP].seq+1
       tcp.flags='RA'
